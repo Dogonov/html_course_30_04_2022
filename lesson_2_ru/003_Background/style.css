@@ -1,0 +1,8 @@
+body {
+    background: url(../002_Images/Images/audi.jpg) no-repeat beige; 
+    background-size: 200px; background-position: bottom right
+}
+
+p{
+    background-color: aqua;
+}
