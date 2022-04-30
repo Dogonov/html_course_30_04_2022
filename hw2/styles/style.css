@@ -1,0 +1,39 @@
+body {
+    background-color: green;
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #cddc39;
+}
+
+img {
+    width: 400px;
+}
+
+div, h1, h2 {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Tapestry', cursive;
+    color: white;
+}
+
+p, a, li {
+    font-family: 'Square Peg', cursive;
+    font-size: 28px;
+}
+
+ul div {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://static.wikia.nocookie.net/netflix/images/4/44/Dark_S3_Poster_%281%29.jpg/revision/latest?cb=20200620223809);
+    background-size: contain;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul p {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 18px;
+}
