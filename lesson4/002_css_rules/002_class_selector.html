@@ -1,0 +1,82 @@
+<html>
+<head>
+
+    <title>Class style</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            font-size: 36px;
+        }
+
+        .class1 {
+            font-size: 20px;
+            color: red;
+            background-color: #000;
+        }
+
+        .main .test p { 
+            color:blue;
+        }
+
+        #someTest {
+           color: red; 
+        }
+
+        div {
+            background: aqua;
+            color: green;
+        }    
+        
+        .test1 {
+            color: red;
+        }
+
+        .test-test {
+            color: blue;
+        }
+
+        ._test3 {
+            color: green;
+        }
+
+        .test4 {
+            color: navy;
+        }
+
+        /* camel case */
+        .headerMenuItem {
+
+        }
+
+        /* dash case */
+        .header-menu-item {
+
+        }
+
+        /* BEM */
+        .header__menu__item {
+
+        }
+
+    </style>
+
+</head>
+<body class="main">
+    <p class="class1">Paragraph with class</p>
+
+    <div class="test">
+        <p id="someTest">test text</p>
+    </div>
+
+    <p class="test1 test2 _test3">Paragraph</p>
+    
+    <div class="class1">
+        <p>Div with class</p>
+    </div>
+</body>
+</html>
