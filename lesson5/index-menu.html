@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal menu</title>
+    <style>
+
+        .main-menu {
+            display: flex;            
+        }
+
+        .main-menu > li {
+            list-style-type: none;
+            /* border: 1px solid green; */           
+            border-top: 1px solid green;
+            border-left: 1px solid green;
+            border-bottom: 1px solid green;
+        }
+
+        .main-menu > li:last-child{
+            border-right: 1px solid green;
+        }
+
+        /* li:last-child{
+            border-right: 1px solid green;
+        } */
+
+        li:hover {
+            background-color: aqua;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+            display: block;
+        }
+
+        .has-sub-menu {
+            position: relative;            
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            padding: 0;
+            width: 110px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .sub-menu > li {
+            list-style-type: none;
+            /* border: 1px solid green; */           
+            border-top: 1px solid red;
+            border-left: 1px solid red;
+            border-right: 1px solid red;
+        }
+
+        .sub-menu li:last-child{
+            border-bottom: 1px solid red;
+        }
+
+        .has-sub-menu:hover .sub-menu {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="main-menu">
+        <li><a href="#">item1</a></li>
+        <li><a href="#">item2</a></li>
+        <li><a href="#">item3</a></li>
+        <li class="has-sub-menu">
+            <a href="#">item4</a>
+            <ul class="sub-menu">
+                <li><a href="#">sub-item1</a></li>
+                <li><a href="#">sub-item2</a></li>
+                <li><a href="#">sub-item3</a></li>
+                <li><a href="#">sub-item4</a></li>
+            </ul>
+        </li>
+        <li><a href="#">item5</a></li>
+    </ul>
+</body>
+</html>
