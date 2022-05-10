@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu css</title>
+    <style>
+        .main-menu {
+            padding: 20px;
+            list-style: none;
+            display: flex;
+            width: 600px;
+            justify-content: space-around;
+        }
+
+        .menu-item {
+            border: 1px solid green;
+            padding: 10px;            
+        }
+
+        .menu-item.has-submenu {
+            position: relative;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+        }
+
+        .sub-menu {
+            list-style: none;
+            display: none;
+            position: absolute;
+            padding: 0;
+            width: 100px;
+            border: 1px solid gainsboro;
+            top: 37px;
+            left: 0;
+        }
+
+        .menu-item.has-submenu:hover .sub-menu{
+            display: block;
+        }
+
+        .breadcrumps {
+            display: flex;
+            list-style: none;
+        }
+
+        .breadcrumps li {
+            margin: 20px;
+        }
+
+        .breadcrumps li::after{
+            content: '';
+            display: inline-block;
+            margin-left: 20px;
+            width: 8px;
+            height: 16px;
+            background-image: url('./arrow.png');
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="main-menu">
+        <li class="menu-item has-submenu">
+            <a href="#">item1</a>
+            <ul class="sub-menu">
+                <li>sub-menu1</li>
+                <li>sub-menu2</li>
+                <li>sub-menu3</li>
+                <li>sub-menu4</li>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="#">item2</a></li>
+        <li class="menu-item has-submenu">
+            <a href="#">item3</a>
+            <ul class="sub-menu">
+                <li>sub-menu1</li>
+                <li>sub-menu2</li>
+                <li>sub-menu3</li>
+                <li>sub-menu4</li>
+            </ul>
+        </li>
+        <li class="menu-item has-submenu">
+            <a href="#">item4</a>
+            <ul class="sub-menu">
+                <li>sub-menu1</li>
+                <li>sub-menu2</li>
+                <li>sub-menu3</li>
+                <li>sub-menu4</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="breadcrumps">
+        <li><a href="#"></a>item 1</li>
+        <li><a href="#"></a>item 2</li>        
+    </ul>
+
+    <span>asdasdasd</span>
+    <span>some more text</span>
+    <span>even more text</span>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam adipisci error, maiores eos numquam autem id mollitia rerum dolore illum perspiciatis ex, velit saepe dolor provident. Dolorem, ipsum alias?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam adipisci error, maiores eos numquam autem id mollitia rerum dolore illum perspiciatis ex, velit saepe dolor provident. Dolorem, ipsum alias?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam adipisci error, maiores eos numquam autem id mollitia rerum dolore illum perspiciatis ex, velit saepe dolor provident. Dolorem, ipsum alias?</div>
+</body>
+</html>
