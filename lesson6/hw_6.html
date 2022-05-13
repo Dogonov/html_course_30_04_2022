@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw_6</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: space-between;
+            /* to remove or add your own styles below */
+            padding: 40px;
+        }
+
+        .left-side {
+            width: 400px;
+        }
+
+        .right-side {
+            width: 600px;
+        }
+
+        .form-item {
+            display: flex;
+            justify-content: space-between;
+            /* to remove or add your own styles below */
+            border: 1px solid green;
+            padding: 4px;
+            margin-bottom: 20px;
+        }
+
+        .form-item.required label::after {
+            content: "*";
+            color: red;
+        }
+
+        /* not priority */
+        /* .form-item span {
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <form>
+        <div class="header">
+            <a href="#">...</a>
+            <select name="actions">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="main">
+            <div class="left-side">
+                <div class="form-item required">
+                    <label for="firstName">First Name</label>
+                    <!-- below example for nt priority -->
+                    <!-- <label for="firstName">First Name <span>*</span></label> -->
+                    <input type="text" id="firstName" placeholder="">
+                </div>
+                <div class="form-item">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="">
+                </div>
+            </div>
+            <div class="right-side"></div>
+        </div>
+        <div class="footer">
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </div>
+    </form>
+</body>
+</html>
