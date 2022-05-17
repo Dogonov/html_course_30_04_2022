@@ -61,27 +61,53 @@ body {
 }
 
 /* Если ширина экрана меньше или равна 1024рх */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .box3,
     .box4 {
         display: none;
     }
-}
+} */
 
 /* Если ширина экрана меньше или равна 768рх */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .box1,
     .box6 {
         display: none;
     }
-}
+} */
 
 /* Если ширина экрана меньше или равна 320рх */
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
     .box2 {
         display: none;
     }
-}
+} */
+
+
+/* ############### min width ############### */
+
+/* Если ширина экрана больше или равна 320рх */
+/* @media (min-width: 320px) {
+    .box2 {
+        display: none;
+    }
+} */
+
+/* Если ширина экрана больше или равна 768рх */
+/* @media (min-width: 768px) {
+    .box1,
+    .box6 {
+        display: none;
+    }
+} */
+
+/* Если ширина экрана больше или равна 1024рх */
+/* @media (min-width: 1024px) {
+    .box3,
+    .box4 {
+        display: none;
+    }
+} */
 
 @media (orientation:landscape) {
     body {

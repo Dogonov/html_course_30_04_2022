@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity vs rgba</title>
+    <style>
+        .main {
+            width: 400px;  
+            padding: 20px;         
+        }
+
+        .opacity {
+            opacity: 0.6;
+            background-color: yellow;
+        }
+
+        .rgba {
+            /* red, green, blue, alpha - applies opactite only for the current div */
+            background-color: rgba(255, 255, 0, 0.1);
+        }
+
+        p {
+            background-color: green;
+        }
+
+        .test {
+            display: -webkit-box; 
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex; 
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main opacity">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti illo itaque labore eos! Odio aperiam ab cumque numquam, architecto quam magni dolorem natus quae voluptatem, iure rerum aliquid dolores!</p>
+        
+    </div>
+    <br>
+    <div class="main rgba">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti illo itaque labore eos! Odio aperiam ab cumque numquam, architecto quam magni dolorem natus quae voluptatem, iure rerum aliquid dolores!</p>
+        
+    </div>
+</body>
+</html>
