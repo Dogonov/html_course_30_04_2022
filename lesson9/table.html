@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-table{
+            background-image: url('./001_tables/Images/mercedes.png'); 
+            border: 1px solid black;
+            background-size: cover;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .has-table {
+            background: blue;
+        }
+
+        .green-bg {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <caption>Lesson 9</caption>
+        <tr>
+            <th rowspan="2">merged cell</th>
+            <td>some text</td>
+            <td>some text</td>
+            <td>some text</td>
+            <td>some text</td>
+            <td>some text</td>
+        </tr>
+        <tr>            
+            <td>some text</td>
+            <td>some text</td>
+            <td>some text</td>
+            <td>some text</td>
+            <td>some text</td>
+        </tr>
+        <tr>
+            <th>phone</th>
+            <td>123123123123</td>
+            <td>123123123123</td>
+            <td>123123123123</td>
+            <td>123123123123</td>
+            <td>123123123123</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Name 123</td>
+            <td>Name 123</td>
+            <td>Name 123</td>
+            <td>Name 123</td>
+            <td>Name 123</td>
+        </tr>
+        <tr>
+            <th>table</th>
+            <td class="has-table" colspan="5">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th>image</th>
+            <td colspan="5">
+                <img src="./001_tables/Images/grumpycat.jpg" alt="">
+            </td>
+        </tr>
+        <tr>
+            <th>lisr</th>
+            <td class="green-bg" colspan="5">
+               <ul>
+                   <li>li 1</li>
+                   <li>li 1</li>
+                   <li>li 1</li>
+                   <li>li 1</li>
+               </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
