@@ -4,13 +4,6 @@
 // --------------------------------------------------
 
 // Flexbox display
-@mixin redHugeBlock() {
-  background-color: red;
-  width: 500px;
-  height: 500px;
-  border-radius: 100%;
-}
-
 @mixin flexbox() {
     display: -webkit-box;
     display: -moz-box;

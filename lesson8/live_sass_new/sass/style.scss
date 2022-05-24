@@ -1,0 +1,92 @@
+@import 'reset';
+@import 'flexmixin';
+@import 'header';
+@import 'footer';
+
+$main-text-color: red;
+$main-text-font: sans-serif;
+
+
+h1 {
+    font-size: 20px;
+    margin: 20px 0;
+    color: $main-text-color;
+    font-family: $main-text-font;
+}
+
+span {
+    font-size: 10px;
+    color: $main-text-color;
+    font-family: $main-text-font;
+}
+
+p {
+    font-size: 14px;
+    color: $main-text-color;
+    font-family: $main-text-font;
+}
+
+.btn {
+    border: 1px solid green;
+    border-radius: 40px;
+    width: 100px;
+    height: 40px;
+    &:hover {
+        background-color: teal;
+    }
+    &.big {
+        width: 200px;
+    }
+    &.blue {
+        background-color: aqua;
+    }
+}
+
+// .btn.big{
+//     width: 200px;
+// }
+
+// .btn.blue{
+//     background-color: aqua;
+// }
+
+// .big-blue-btn {
+//     @extend .btn;
+//     background-color: blue;
+//     width: 200px;
+// }
+
+
+// .main-menu {
+//     padding: 0;
+//     background-color: green;
+//     list-style-type: none;
+// }
+
+// .main-menu .menu-item {
+//     padding: 20px;
+// }
+
+// .main-menu .menu-item a {
+//     color: red;
+//     font-size: 40px;
+// }
+
+.main-menu {
+    padding: 0;
+    background-color: green;
+    list-style-type: none;
+    @include flexbox();
+    @include flex-direction(column);
+
+    .menu-item {
+        padding: 20px;
+
+        a {
+            color: red;
+            font-size: 40px;
+        }
+    }
+}
+
+
